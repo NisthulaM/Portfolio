@@ -1,0 +1,56 @@
+body{
+    background-color: #06141b;
+}
+.auto-style4 {
+    width: 100%;
+    height: 467px;
+    text-align:center;
+    color: aliceblue ;
+}
+.readMoreBtn{
+    background-color: orangered;
+    color: aliceblue;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.readMoreBtn:hover{
+    background-color: aqua;
+    color: #06141B;
+}
+header{
+    background-color: #06141B;
+    color: aliceblue;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+    margin-left: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+header ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+header ul li:hover::after{
+    width: 100%;
+
+}

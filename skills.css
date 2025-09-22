@@ -1,0 +1,72 @@
+body{
+    background-color: #06141B;
+}
+header{
+    background-color: #06141B;
+    color: aliceblue;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+    margin-left: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+header ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+header ul li:hover::after{
+    width: 100%;
+
+}
+p{
+    font-size: 20px;
+}
+.progress{
+    background-color: #253745;
+    width: 80%;
+    border-radius: 15px;
+}
+.skill{
+    background-color: orangered;
+    color: white;
+    padding: 1%;
+    text-align: right;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.html{
+    width: 90%;
+}
+.js{
+    width: 30%;
+}
+.c{
+    width: 80%;
+}
+.sql{
+    width: 90%;
+}
+.java{
+    width: 60%;
+}
+.py{
+    width: 75%;
+}
